@@ -1,12 +1,9 @@
 $(call inherit-product, device/xiaomi/sagit/full_sagit.mk)
 
-# Inherit some common Citrus-CAF stuff.
-$(call inherit-product, vendor/citrus/common.mk)
+# Inherit some common AOSCP stuff.
+$(call inherit-product, vendor/aoscp/configs/common_full_phone.mk)
 
-PRODUCT_PACKAGES += \
-    SnapdragonMusic
-
-PRODUCT_NAME := citrus_sagit
+PRODUCT_NAME := aoscp_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
